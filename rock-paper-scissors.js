@@ -1,3 +1,4 @@
+// Load the score and total played (if available)
 let totalPlayed = JSON.parse(localStorage.getItem('totalplayed')) || 0;
 
 let score = JSON.parse(localStorage.getItem('score')) || {
