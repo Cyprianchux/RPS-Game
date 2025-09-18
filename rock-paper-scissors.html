@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rock-Paper-Scissors copy</title>
+  <link rel="stylesheet" href="rock-paper-scissors.css">
+</head>
+<body>
+  <div class="body-container">
+    <div class="picture-div">
+      <picture><img src="images/rock-paper-scissor.jpg" alt="rock-paper-scissors-image"></picture>
+      <h1>Rock Paper Scissors</h1>
+    </div>
+    
+  <div class="buttonContainer">
+    <button class="imageButton" onclick="
+    genRandomNumber();
+    getComputerMove('Rock');
+  "><img class="imageIcon" src="images/rock.png" alt="Rock button"></button>
+
+  <button class="imageButton" onclick="
+    genRandomNumber();
+    getComputerMove('Paper');
+  "><img class="imageIcon" src="images/paper.png" alt="Paper button"></button>
+
+  <button class="imageButton" onclick="
+    genRandomNumber();
+    getComputerMove('Scissors');
+  "><img class="imageIcon" src="images/scissors.png" alt="Scissors button"></button>
+  </div>
+  
+  
+  <P class="js-outcome"></P>
+  <div class="js-pick-container">
+    <p class="js-pick"></p>
+  </div>
+  <p class="js-result"></p>
+
+  <button class="js-reset" onclick="
+    resetScore();
+    updateScore();
+    pickOutput();
+    showResetPopUp();
+    document.querySelector('.js-totalPlayed').textContent = 'Pick a move to start playing again';
+  ">Reset Score</button>
+
+  <p class="js-showResetPopUp" style="text-align: center; display: inline-block;"></p>
+  <br>
+
+  <p style="display: inline-block;"></p><p class="js-totalPlayed" style="display: inline-block;"></p>
+  </div>
+
+  <script src="rock-paper-scissors.js"></script>
+</body>
+</html>

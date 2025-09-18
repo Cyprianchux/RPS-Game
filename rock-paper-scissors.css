@@ -1,0 +1,89 @@
+body {
+  font-family: arial;
+  background-color:rgb(18, 18, 18);
+  color: rgb(247, 247, 247);
+  justify-items: center;
+}
+
+.body-container {
+  border: 1px solid antiquewhite;
+  padding: 0 20px 50px 20px;
+  border-radius: 8px;
+}
+
+.picture-div {
+  display: flex;
+  width: 440px;
+  height: 100px;
+  align-items: center;
+}
+
+.picture-div img {
+  object-fit: contain;
+  width: 100px;
+  margin-right: 5px;
+}
+
+h1 {
+  margin: 0;
+  text-align: center;
+}
+
+.imageIcon {
+  width: 55px;
+  padding: 25px; 
+}
+
+.imageIcon1 {
+  width: 40px;
+}
+
+.imageButton {
+  background-color: transparent;
+  border-radius: 50%;
+  border-width: 3px;
+  border-color: blue;
+  margin: 10px;
+}
+
+.imageButton:hover {
+  border-color: rgb(255, 200, 0);
+  scale: 1.02;
+  transition: 0.5s ease;
+}
+
+.imageButton:active {
+  border-color: rgb(255, 200, 0);
+  scale: 1.05;
+}
+
+.buttonContainer, .js-pick-container {
+  display: flex;
+  width: 440px;
+  border-radius: 5px;
+  background-color: white;
+  margin-bottom: 50px;
+  color: blue;
+  font-size: large;
+  font-weight: bold;
+  justify-content: center;
+}
+
+.pickAhand {
+  width: 30px;
+}
+
+.js-outcome {
+  font-size: 23px;
+  font-weight: bolder;
+}
+
+.js-reset {
+  padding: 8px 10px;
+  font-weight: bold;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
